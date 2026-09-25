@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Formulario de contacto de muestra del sitio educativo Gemelos Digitales.">
+    <title>
+      Contacto | Gemelos digitales
+    </title>
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Logo de Gemelos Digitales"><span>Gemelos Digitales</span></a>
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a><a href="acerca.html">Acerca de</a><a href="contacto.html" aria-current="page">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="page-heading">
+        <div class="wrap">
+          <span class="eyebrow">Contacto</span>
+          <h1>
+            Comparte tu pregunta y contáctanos.
+          </h1>
+        </div>
+      </div>
+      <section class="section">
+        <div class="wrap form-grid">
+          <form id="contact-form" onsubmit="event.preventDefault()">
+            <h2>
+              Formulario de contacto
+            </h2>
+            <p class="note">
+              Todos los campos están marcados como obligatorios.
+            </p>
+            <label for="nombre">
+              Nombre
+            </label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" required maxlength="80">
+            <label for="correo">
+              Correo electrónico
+            </label>
+            <input id="correo" name="correo" type="email" autocomplete="email" required maxlength="120">
+            <label for="tema">
+              Tema de interés
+            </label>
+            <select id="tema" name="tema" required><option value="">Selecciona un tema</option><option value="conceptos">Conceptos básicos</option><option value="aplicaciones">Aplicaciones</option><option value="recursos">Recursos y fuentes</option></select>
+            <label for="mensaje">
+              Mensaje
+            </label>
+            <textarea id="mensaje" name="mensaje" required maxlength="1000" placeholder="Escribe tu pregunta aquí"></textarea>
+            <p>
+              <button class="button" type="submit">Revisar mensaje</button>
+            </p>
+            <p class="note" id="estado" role="status" aria-live="polite">
+            </p>
+          </form>
+          <aside class="side">
+            <h2>
+              Antes de escribir
+            </h2>
+            <p>
+              Consulta la página <a href="acerca.html">Acerca de</a> para revisar conceptos, aplicaciones y fuentes. Este proyecto académico muestra la estructura de un formulario estático.
+            </p>
+            <h3>
+              Campos incluidos
+            </h3>
+            <ul>
+              <li>
+                Nombre
+              </li>
+              <li>
+                Correo electrónico
+              </li>
+              <li>
+                Tema de interés
+              </li>
+              <li>
+                Mensaje
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <h3>
+              Gemelos Digitales
+            </h3>
+            <p>
+              Guía introductoria basada en fuentes públicas especializadas.
+            </p>
+          </div>
+          <div>
+            <h3>
+              Explorar
+            </h3>
+            <ul>
+              <li>
+                <a href="index.html">Inicio</a>
+              </li>
+              <li>
+                <a href="acerca.html">Acerca de</a>
+              </li>
+              <li>
+                <a href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>
+              Redes sociales
+            </h3>
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/company/nist/" target="_blank" rel="noopener noreferrer">NIST en LinkedIn</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@SiemensSoftware" target="_blank" rel="noopener noreferrer">Siemens Software en YouTube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="copyright">
+          © 2026 Gemelos Digitales · Universidad Tecnológica de Panamá
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
